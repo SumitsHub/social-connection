@@ -1,22 +1,22 @@
 function findPath(src, trgt, graph) {
-  const res = [];
-  const DFS = (node, path) => {
+  const output = [];
+  const FindByDFS = (node, path) => {
     path.push(node);
 
-    // if we've reached the target, we've found a path
+    // if target reached, found a path
     if (node === trgt) {
-      res.push(path);
+      output.push(path);
       return;
     }
 
     for (let edge of graph[node]) {
-      DFS(edge, [...path]);
+      FindByDFS(edge, [...path]);
     }
   };
 
-  DFS(src, []);
+  FindByDFS(src, []);
 
-  return res;
+  return output;
 }
 
-export {findPath};
+export { findPath };

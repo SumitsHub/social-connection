@@ -40,7 +40,7 @@ const Home = () => {
       <div style={{ marginTop: "10vh" }}>
         <CssBaseline />
         <Container maxWidth="md">
-          <Box sx={{ bgcolor: "#ddd", height: "4rem", padding: "1rem" }}>
+          <Box sx={{ bgcolor: "#ddd", minHeight: "4rem", padding: "1rem" }}>
             <ButtonGroup
               variant="text"
               aria-label="text button group"

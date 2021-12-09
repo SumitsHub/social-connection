@@ -122,7 +122,7 @@ const FindConnection = ({ persons, connectionsArr }) => {
                 Connection Found
               </Typography>
               {foundPath.map((e, i) => {
-                return <b key={i}>{e}</b>;
+                return <b key={i}>{e}<br/></b>;
               })}
             </Box>
           ) : (
